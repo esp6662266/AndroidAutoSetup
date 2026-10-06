@@ -22,7 +22,7 @@ PC가 “설치 확인”을 출력해도 Android Auto 개발자 설정 저장�
 
 `tests/test-mac.sh`와 `tests/test-windows.ps1`은 실제 휴대폰을 사용하지 않고 연결 목록/패키지 결과를 모의한다. 워치·폴드6·에뮬레이터 제외, 모델 재확인, unauthorized/여러 기기/낮은 SDK 실패, 패키지명 정확 일치 및 설치 누락 실패를 검증한다. 자동 검사 템플릿 `ci/validate.yml`은 Windows PowerShell 5.1과 macOS에서 이 검사와 공식 파일 다운로드·해시 검사·ADB 실행을 수행하도록 작성했다. 현재 GitHub 인증에 workflow 권한이 없어 실제 Actions 등록/실행은 하지 않았다. 필요하면 GitHub 웹에서 이 파일을 `.github/workflows/validate.yml`로 등록할 수 있다.
 
-폴드3 실기 설치와 Windows PC에서 폴드3 USB 연결, 차량 실행은 아직 검증하지 않았다. 과거 폴드6의 기기 캡처·개인 설정은 저장소와 배포 파일에 포함하지 않는다. `cache/`, `runtime/`, `artifacts/`는 Git에서 제외한다.
+2026-10-06: Mac Bash 3.2의 모의 검사 11개, PowerShell 7.6.6(macOS)에서 Windows 스크립트 모의 검사 11개 통과. Mac의 실제 공식 파일 다운로드/해시 검사/ADB 실행을 확인했고, PowerShell의 Windows 파일 다운로드/해시 검사/압축 해제도 확인했다. Windows 5.1 실제 실행과 폴드3 USB 연결·휴대폰 설치·차량 실행은 아직 검증하지 않았다. 과거 폴드6의 기기 캡처·개인 설정은 저장소와 배포 파일에 포함하지 않는다. `cache/`, `runtime/`, `artifacts/`는 Git에서 제외한다.
 
 ## 원본 출처
 
