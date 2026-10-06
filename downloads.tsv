@@ -1,0 +1,5 @@
+id	filename	url	sha256
+king	KingInstaller-v2.3.apk	https://github.com/fcaronte/KingInstaller/releases/download/2.3/KingInstaller-v2.3.apk	2dfa867b27ba7de4cf5a6948c1bc894d5861c20abe3d46a62e764476a7aa9ec1
+browser	AABrowser-v1.9.apk	https://github.com/fcaronte/AABrowser/releases/download/1.9/AABrowser-v1.9.apk	7766bb378b5fca34c1478c778111471cd6f8da004bae1c681b944012b1644db1
+mac	platform-tools_r37.0.1-darwin.zip	https://dl.google.com/android/repository/platform-tools_r37.0.1-darwin.zip	ee39ad5967e95c2a07f04dbcbde96b1a0c916ba376096db5d2f498b7727a5d1d
+windows	platform-tools_r37.0.1-win.zip	https://dl.google.com/android/repository/platform-tools_r37.0.1-win.zip	45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99

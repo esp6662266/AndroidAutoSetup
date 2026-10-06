@@ -1,0 +1,23 @@
+name: Validate Mac and Windows installers
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  mac:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test target selection and failure paths
+        run: /bin/bash tests/test-mac.sh
+      - name: Download official assets, check hashes and run ADB
+        run: /bin/bash scripts/setup-mac.sh --prepare-only --accept-sdk-license
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test with Windows PowerShell 5.1
+        shell: powershell
+        run: ./tests/test-windows.ps1
+      - name: Download official assets, check hashes and run Windows ADB
+        shell: powershell
+        run: ./scripts/setup-windows.ps1 -PrepareOnly -AcceptSdkLicense
