@@ -10,7 +10,7 @@
 
 ## 2. PC 도구 실행
 
-GitHub Releases에서 OS에 맞는 ZIP을 내려받고 **압축을 모두 풀어** 실행한다. GitHub 저장소가 비공개이므로 소유자 계정으로 로그인해야 한다.
+GitHub Releases에서 OS에 맞는 ZIP을 내려받고 **압축을 모두 풀어** 실행한다. 공개 저장소이므로 GitHub 로그인 없이 설치 ZIP을 받을 수 있다.
 
 - Windows: `Setup-Windows.cmd` 더블클릭. PowerShell 5.1 사용.
 - Mac: `Setup-Mac.command` 더블클릭. 실행 권한 메시지가 나오면 터미널에서 `bash /파일이있는폴더/Setup-Mac.command`로 실행한다. 공백이 있는 경로는 따옴표로 감싼다.
